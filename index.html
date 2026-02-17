@@ -64,21 +64,91 @@
   </div>
 </section>
 
+<section id="novedades">
+    <h2>Últimas Noticias y Eventos</h2>
+    <div class="noticias-grid">
+      <!-- Tarjeta 1 -->
+      <div class="noticia-card">
+        <img src="img/evento1.jpg" alt="Talleres de Verano" loading="lazy">
+        <div class="noticia-content">
+          <h3>Talleres de Verano para Niños</h3>
+          <p class="fecha"><i class="bi bi-calendar-event"></i> 15 de Febrero 2026</p>
+          <p class="descripcion-corta">HABILIDADES PARA LA VIDA: DESARROLLANDO SUPERPODERES</p>
+          <button class="btn-mas" data-target="detalle1">Leer más</button>
+        </div>
+        <div class="noticia-detalle" id="detalle1">
+          <div class="detalle-texto">
+            <p>Se lograron los objetivos de Promover el desarrollo socioemocional, cognitivo y conductual de los niños mediante actividades lúdicas, estructuradas y terapéuticas que fortalezcan sus habilidades sociales, la atención y concentración, la autorregulación emocional, la flexibilidad cognitiva y la comunicación asertiva.
+            </p>
+            <p>Impartido por la psicóloga especialista en crianza, Dra. María Pérez.</p>
+          </div>
+          <div class="detalle-galeria">
+            <h4>Galería del evento</h4>
+            <div class="galeria-grid">
+              <img src="img/evento1_foto1.jpg" alt="Foto 1" loading="lazy">
+              <img src="img/evento1_foto2.jpg" alt="Foto 2" loading="lazy">
+              <img src="img/evento1_foto3.jpg" alt="Foto 3" loading="lazy">
+              <!-- más imágenes -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="noticia-card">
+        <img src="img/evento2.jpg" alt="Navidad" loading="lazy">
+        <div class="noticia-content">
+          <h3>Festival de Navidad</h3>
+          <p class="fecha"><i class="bi bi-calendar-event"></i> 15 de Febrero 2026</p>
+          <p class="descripcion-corta">Celebrando la Navidad con nuestro pequeños</p>
+          <button class="btn-mas" data-target="detalle2">Leer más</button>
+        </div>
+        <div class="noticia-detalle" id="detalle2">
+          <div class="detalle-texto">
+            <p>Nos alegra el corazón en nuestro Centro Inteligencias múltiples compartir y celebrar con nuestros pequeños el nacimiento del Niño Dios,
+            </p>
+            <p>Agradecemos a los pequeños, a las familias y a todo nuestro equipo</p>
+          </div>
+          <div class="detalle-galeria">
+            <h4>Galería del evento</h4>
+            <div class="galeria-grid">
+              <img src="img/evento2_foto1.jpg" alt="Foto 1" loading="lazy">
+              <img src="img/evento2_foto2.jpg" alt="Foto 2" loading="lazy">
+              <img src="img/evento2_foto3.jpg" alt="Foto 3" loading="lazy">
+              <!-- más imágenes -->
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+</section>
 <section id="contacto">
     <h2>Contacto</h2>
     <div class="contacto-container">
       <div class="contacto-info">
-        <p><i class="bi bi-geo-alt-fill"></i> Miguel Grau mz L Lt 19, Chaclacayo, Lima - Perú</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Miguel Grau Mz L Lt 19, Chaclacayo, Lima - Perú</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Miguel Grau Mz J Lt 22, Chaclacayo, Lima - Perú</p>
         <p><i class="bi bi-telephone-fill"></i> 977 415 885</p>
         <p><i class="bi bi-envelope-fill"></i> c.p.inteligenciasmultiples@gmail.com</p>
       </div>
       <div class="contacto-form">
-        <form class="formulario">
-          <input type="text" placeholder="Nombre" required>
-          <input type="email" placeholder="Correo" required>
-          <textarea placeholder="Mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+        <form id="contact-form" class="formulario">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            
+            <!-- Campo oculto para que Formspree sepa a quién responder (opcional) -->
+            <input type="hidden" name="_replyto" value="email">
+            
+            <!-- Campo oculto para asunto personalizado -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+            
+            <button type="submit" id="submit-btn">Enviar mensaje</button>
+          </form>
+          
+          <!-- Contenedor para mostrar mensajes de éxito/error -->
+          <div id="form-message" style="margin-top: 15px; padding: 10px; display: none;"></div>
       </div>
     </div>
   </section>
