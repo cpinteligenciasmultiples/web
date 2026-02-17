@@ -2,56 +2,91 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Inteligencias Múltiples | Centro Psicológico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Psicológico Inteligencias Múltiples</title>
+
 <link rel="stylesheet" href="css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Centro Psicológico<br>Inteligencias Múltiples</h1>
-  <p>Atención psicológica integral</p>
-</header>
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/51977415885" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+  <i class="bi bi-whatsapp"></i>
+</a>
 
-<nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#contacto">Contacto</a>
-  <a href="#ubicacion">Ubicación</a>
-</nav>
+<header>
+    <img src="img/logo.png" class="logo" alt="Logo">
+    <div class="header-text">
+      <h1>Centro Neuropsicológico<br>Inteligencias Múltiples</h1>
+      <p>Atención psicológica integral</p>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
+
+<section class="banner">    
+  <img src="img/banner.png" class="slide active">
+  <img src="img/centro1.png" class="slide">
+  <img src="img/personal1.png" class="slide">
+  <img src="img/centro2.png" class="slide">
+</section>
 
 <section id="inicio" class="hero">
   <h2>Tu bienestar emocional es nuestra prioridad</h2>
-  <p>Brindamos atención psicológica especializada para niños, adolescentes y adultos.</p>
+  <p>Atendemos niños, adolescentes y adultos con un enfoque humano y profesional.</p>
 </section>
 
 <section id="servicios">
   <h2>Servicios</h2>
-  <ul>
-    <li>Evaluación psicológica</li>
-    <li>Terapia individual</li>
-    <li>Terapia infantil</li>
-    <li>Orientación familiar</li>
-    <li>Evaluación neuropsicológica</li>
-  </ul>
+  <div class="servicios-grid">
+    <div><i class="bi bi-heart-pulse"></i>Terapia Psicológica</div>
+    <div><i class="bi bi-emoji-smile"></i>Terapia Infantil</div>
+    <div><i class="bi bi-person-check"></i>Evaluación Psicológica</div>
+    <div><i class="bi bi-list-task"></i>Evaluación Neuropsicológica</div>
+    <div><i class="bi bi-people"></i>Terapia Familiar</div>
+    <div><i class="bi bi-chat-dots"></i>Orientación Vocacional</div>
+    <div><i class="bi bi-journal-medical"></i>Informes Psicológicos</div>
+    <div><i class="bi bi-person-hearts"></i>Terapia de Pareja</div>
+    <div><i class="bi bi-emoji-neutral"></i>Problemas de Aprendizaje</div>
+    <div><i class="bi bi-book"></i>Reeducación Cognitiva</div>
+    <div><i class="bi bi-person-lines-fill"></i>Consejería</div>
+    <div><i class="bi bi-lightbulb"></i>Desarrollo Emocional</div>
+    <div><i class="bi bi-shield-check"></i>Intervención Conductual</div>
+    <div><i class="bi bi-clipboard-check"></i>Diagnóstico Clínico</div>
+    <div><i class="bi bi-activity"></i>Seguimiento Terapéutico</div>
+    <div><i class="bi bi-hand-thumbs-up"></i>Apoyo Psicológico</div>
+  </div>
 </section>
 
 <section id="contacto">
-  <h2>Contacto</h2>
-  <p>📍 Miguel Grau mz L Lt 19, Chaclacayo, Lima - Perú</p>
-  <p>📞 977 415 885</p>
-  <p>📧 c.p.inteligenciasmultiples@gmail.com</p>
-  <p>
-    🌐 <a href="https://www.facebook.com/centropsicologicointeligenciasmultiples2020/?locale=es_LA" target="_blank">
-      Facebook Oficial
-    </a>
-  </p>
-</section>
+    <h2>Contacto</h2>
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <p><i class="bi bi-geo-alt-fill"></i> Miguel Grau mz L Lt 19, Chaclacayo, Lima - Perú</p>
+        <p><i class="bi bi-telephone-fill"></i> 977 415 885</p>
+        <p><i class="bi bi-envelope-fill"></i> c.p.inteligenciasmultiples@gmail.com</p>
+      </div>
+      <div class="contacto-form">
+        <form class="formulario">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo" required>
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
 <section id="ubicacion">
   <h2>Cómo llegar</h2>
-  <iframe 
-    src="https://www.google.com/maps?q=-11.9872507,-76.8150772&hl=es&z=16&output=embed"
-    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+  <iframe src="https://www.google.com/maps?q=-11.9872507,-76.8150772&hl=es&z=16&output=embed"
+    width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
   </iframe>
 </section>
 
@@ -59,6 +94,6 @@
   <p>© 2026 Centro Psicológico Inteligencias Múltiples</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
